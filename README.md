@@ -70,3 +70,17 @@ tags = { "team" = "lambda" }   # List of AWS resource tags for this function
 ```sh
 cargo lambda init --name init-project
 ```
+
+- Generate a Github Workflow on the folder of newly created lambda function
+
+> create `.github/workflows/main.yaml`
+
+```sh
+mkdir -p .github/workflows/main.yaml
+```
+
+ press <kbd>Alt|Opt</kbd> + <kbd>F2</kbd> select  `workflow`
+
+ or simply type `workflow` on the new main.yaml file to trigger snippet
+
+
