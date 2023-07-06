@@ -43,8 +43,10 @@ git config --global alias.set-remote '!f() { GIT_USER=$(gh api user | jq -r .log
 ## Workflow
 
 ```sh
-cargo lambda new function
-cd function
+cargo lambda new my-function
+cd my-function
 init
 git set-remote
+cd ..
+git submodule add ./my-function
 ```
