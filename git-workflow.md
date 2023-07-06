@@ -95,3 +95,10 @@ git module my-function
 git add .gitmodules my-function
 git commit -m "added new module"
 ```
+
+## Cache Git Passphrase
+```sh
+ssh-agent -k          # Kill the current SSH agent
+eval "$(ssh-agent -s)"   # Start a new SSH agent
+ssh-add ~/.ssh/id_rsa    # Add your SSH key to the agent
+```
