@@ -59,5 +59,7 @@ cd my-function
 init
 git set-remote
 cd ..
-git submodule add ./my-function
+# run this if it is your first submodule
+git submodule init
+git module my-function
 ```
