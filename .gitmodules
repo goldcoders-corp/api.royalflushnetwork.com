@@ -1,3 +1,6 @@
 [submodule "rfn_users_api"]
 	path = rfn_users_api
 	url = git@github.com:codeitlikemiley/rfn_users_api.git
+[submodule "hello-world"]
+	path = hello-world
+	url = git@github.com:codeitlikemiley/hello-world.git
