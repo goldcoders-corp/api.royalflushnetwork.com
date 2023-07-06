@@ -73,14 +73,14 @@ cargo lambda init --name init-project
 
 - Generate a Github Workflow on the folder of newly created lambda function
 
-> create `.github/workflows/main.yaml`
+> create `.github/workflows/rust.yml`
 
 ```sh
-mkdir -p .github/workflows/main.yaml
+mkdir -p .github/workflows/rust.yml
 ```
 
  press <kbd>Alt|Opt</kbd> + <kbd>F2</kbd> select  `workflow`
 
- or simply type `workflow` on the new main.yaml file to trigger snippet
+ or simply type `workflow` on the new main.yml file to trigger snippet
 
 
