@@ -40,6 +40,17 @@ alias init="git init && git add . && git commit -m 'init'"
 git config --global alias.set-remote '!f() { GIT_USER=$(gh api user | jq -r .login); REPO_NAME=$(basename $(pwd)); git remote add origin git@github.com:$GIT_USER/$REPO_NAME.git; }; f'
 ```
 
+> Add submodule using folder path with command `git module FOLDERNAME`
+```sh
+git config --global alias.module '!f() { GIT_USER=$(gh api user | jq -r .login); REPO_NAME=$1; git submodule add git@github.com:$GIT_USER/$REPO_NAME.git $REPO_NAME; }; f'
+```
+
+> Delete a submodule of lambda folder with command `git module-delete`
+
+```sh
+git config --global alias.module-delete '!f() { REPO_NAME=$1; git submodule deinit -f -- $REPO_NAME; rm -rf .git/modules/$REPO_NAME; git rm -f $REPO_NAME; }; f'
+```
+
 ## Workflow
 
 ```sh
